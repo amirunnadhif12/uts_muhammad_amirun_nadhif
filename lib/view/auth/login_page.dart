@@ -89,8 +89,16 @@ class _LoginPageState extends State<LoginPage> {
                                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomePage()));
                                 }
                               },
-                              style: ElevatedButton.styleFrom(backgroundColor: primaryGreen, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                              child: _loading ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2)) : const Text('Login', style: TextStyle(fontSize: 16)),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                foregroundColor: primaryGreen,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                side: const BorderSide(color: primaryGreen, width: 1.2),
+                                elevation: 0,
+                              ),
+                              child: _loading
+                                  ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(color: primaryGreen, strokeWidth: 2))
+                                  : const Text('Login', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                             ),
                           ),
                           const SizedBox(height: 8),
