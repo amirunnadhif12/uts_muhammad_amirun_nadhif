@@ -20,7 +20,7 @@ Future<void> main() async {
 
 class MyApp extends StatelessWidget {
   final bool dbInitialized;
-  const MyApp({super.key, required this.dbInitialized});
+  const MyApp({required this.dbInitialized});
 
   @override  
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
 }
 
 class _DatabaseErrorPage extends StatelessWidget {
-  const _DatabaseErrorPage({super.key});
+  const _DatabaseErrorPage();
 
   @override
   Widget build(BuildContext context) {

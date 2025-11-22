@@ -68,8 +68,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.teal, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
                       onPressed: () async {
-                        // generate cute avatar URL using DiceBear avataaars
-                        final nameForUrl = Uri.encodeComponent(user.nama);
+                        // generate cute avatar URL (static image used here)
                         final generated = 'https://img.lovepik.com/png/20231109/profile-pic-vector-cartoon-sticker-but-pic_545336_wh860.png';
                         final ok = await auth.updateUser(
                           id: user.id!,
