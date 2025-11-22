@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     }).toList();
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF6FBFF),
+      backgroundColor: const Color(0xFFE8F7EA),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
