@@ -36,15 +36,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: const Color(0xFFE8F7EA),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: primaryGreen,
         elevation: 0,
-        foregroundColor: Colors.black87,
+        foregroundColor: Colors.white,
         toolbarHeight: 80,
         title: Row(
           children: [
             CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.grey.shade200,
+              backgroundColor: Colors.white,
               child: ClipOval(
                 child: Builder(builder: (_) {
                   final name = auth.user?.nama ?? 'User';
@@ -66,14 +66,14 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('Welcome Back', style: TextStyle(fontSize: 12, color: Colors.black54)),
-                  Text(auth.user?.nama ?? 'User', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                  const Text('Welcome Back', style: TextStyle(fontSize: 12, color: Colors.white70)),
+                  Text(auth.user?.nama ?? 'User', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white)),
                 ],
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.shopping_cart_outlined),
+              icon: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
             ),
           ],
         ),
