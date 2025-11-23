@@ -8,13 +8,17 @@ import 'database/database_helper.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  debugPrint('APP START: Widgets binding initialized');
   bool dbOk = true;
   try {
+    debugPrint('APP START: initializing database...');
     await DatabaseHelper.instance.database; // inisialisasi DB & create tables
+    debugPrint('APP START: database initialized successfully');
   } catch (e) {
     dbOk = false;
     debugPrint('Gagal inisialisasi database: $e');
   }
+  debugPrint('APP START: running app (dbOk=$dbOk)');
   runApp(MyApp(dbInitialized: dbOk));
 }
 
