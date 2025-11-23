@@ -147,14 +147,14 @@ final List<ObatModel> obatDummy = [
     harga: 11000),
   ObatModel(
     id: 'o24',
-    nama: 'Obat Batuk Sedatif',
+    nama: 'Vicks Vormula 44',
     kategori: 'Respiratory',
-    gambar: '',
+    gambar: 'assets/images/VicksVormula44.jpg',
     harga: 10000),
   ObatModel(
     id: 'o25',
     nama: 'Cetirizine',
     kategori: 'Respiratory',
-    gambar: '',
+    gambar: 'assets/images/Cetirizine.jpeg',
     harga: 7000),
 ];
