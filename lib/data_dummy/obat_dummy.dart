@@ -22,9 +22,9 @@ final List<ObatModel> obatDummy = [
     harga: 8000),
   ObatModel(
     id: 'o5',
-    nama: 'Analgesik Anak',
+    nama: 'Ottopan',
     kategori: 'Analgesik',
-    gambar: '',
+    gambar: 'assets/images/ottopan2.jpg',
     harga: 7000),
 
   // Antibiotik (3)
@@ -95,9 +95,9 @@ final List<ObatModel> obatDummy = [
   // Obat Mata (3)
   ObatModel(
     id: 'o16',
-    nama: 'Tetes Mata Artificial',
+    nama: 'Alcon',
     kategori: 'Obat Mata',
-    gambar: '',
+    gambar: 'assets/images/Alcon.jpg',
     harga: 18000),
   ObatModel(
     id: 'o17',
