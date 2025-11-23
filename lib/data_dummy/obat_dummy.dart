@@ -135,15 +135,15 @@ final List<ObatModel> obatDummy = [
   // Respiratory (4)
   ObatModel(
     id: 'o22',
-    nama: 'Salbutamol Inhaler',
+    nama: 'Fresh Care',
     kategori: 'Respiratory',
-    gambar: '',
+    gambar: 'assets/images/FreshCare.jpg',
     harga: 45000),
   ObatModel(
     id: 'o23',
-    nama: 'Obat Batuk Ekspektoran',
+    nama: 'Siledex',
     kategori: 'Respiratory',
-    gambar: '',
+    gambar: 'assets/images/Siledex.jpeg',
     harga: 11000),
   ObatModel(
     id: 'o24',
