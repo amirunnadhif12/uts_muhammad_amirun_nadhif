@@ -101,15 +101,15 @@ final List<ObatModel> obatDummy = [
     harga: 18000),
   ObatModel(
     id: 'o17',
-    nama: 'Obat Mata Merah',
+    nama: 'Insto',
     kategori: 'Obat Mata',
-    gambar: '',
+    gambar: 'assets/images/Insto.jpg',
     harga: 9000),
   ObatModel(
     id: 'o18',
-    nama: 'Salep Mata Antibiotik',
+    nama: 'Artificial tears',
     kategori: 'Obat Mata',
-    gambar: '',
+    gambar: 'assets/images/Artificial.jpg',
     harga: 20000),
 
   // Gastrointestinal (3)
